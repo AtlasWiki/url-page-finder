@@ -1,7 +1,7 @@
 // Note: this only grabs all urls inside the current webpage
 // Paste this and execute in your browser's console to use
 
-numOfUrls = document.querySelectorAll('a').length;
+var numOfUrls = document.querySelectorAll('a').length;
 console.log(`%c
 ░██████╗░██╗░░░██╗██╗░█████╗░██╗░░██╗  ░██████╗██╗███╗░░░███╗██████╗░██╗░░░░░███████╗
 ██╔═══██╗██║░░░██║██║██╔══██╗██║░██╔╝  ██╔════╝██║████╗░████║██╔══██╗██║░░░░░██╔════╝
