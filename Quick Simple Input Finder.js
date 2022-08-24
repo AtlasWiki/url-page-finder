@@ -1,6 +1,3 @@
-// Note: this only grabs all inputs inside the current webpage
-// Paste this and execute in your browser's console to use
-
 inputs_list = document.querySelectorAll('input').length;
 console.log(`%c
 ░██████╗░██╗░░░██╗██╗░█████╗░██╗░░██╗  ░██████╗██╗███╗░░░███╗██████╗░██╗░░░░░███████╗
@@ -16,9 +13,10 @@ console.log(`%c
 ██║██║╚████║██╔═══╝░██║░░░██║░░░██║░░░  ██╔══╝░░██║██║╚████║██║░░██║██╔══╝░░██╔══██╗
 ██║██║░╚███║██║░░░░░╚██████╔╝░░░██║░░░  ██║░░░░░██║██║░╚███║██████╔╝███████╗██║░░██║
 ╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚═════╝░░░░╚═╝░░░  ╚═╝░░░░░╚═╝╚═╝░░╚══╝╚═════╝░╚══════╝╚═╝░░╚═╝` + '\n\n', 'font-family:sans-serif; color:#CB3636;');
+console.log('%c===========================================================================================================================================================\n\ncurrent website/webpage: ' +  document.URL + "\n\n=============================================================================================================================================================\n\n", ' color:#CB3636');
 
 for (let i = 0; i < inputs_list; i++) {
-    console.log('%c[' + i + ']', 'background: black; color: #87EEF3; font-weight:bold;',
+    console.log('%c[' + i + ']', 'background: black; color: #CB3636; font-weight:bold;',
     document.querySelectorAll("input")[i].getAttribute('type')
     );
 }
