@@ -22,9 +22,10 @@ console.log(`%c
 ██╔══╝░░██║██║╚████║██║░░██║██╔══╝░░██╔══██╗
 ██║░░░░░██║██║░╚███║██████╔╝███████╗██║░░██║
 ╚═╝░░░░░╚═╝╚═╝░░╚══╝╚═════╝░╚══════╝╚═╝░░╚═╝` + '\n\n', 'font-family:sans-serif; color:#EEB0EE;' )
+console.log('%c===========================================================================================================================================================\n\ncurrent website/webpage: ' +  document.URL + "\n\n=============================================================================================================================================================\n\n", ' color:#F33353');
 
 var files_list = document.querySelectorAll('link').length;
 
 for (let i = 0; i < files_list; i++) {
-    console.log('%c[' + i + ']', 'background: black; color: #87EEF3; font-weight:bold;', 'linked file:   ' + document.querySelectorAll('link')[i].getAttribute('href')); 
+    console.log('%c[' + i + ']', ' color: #F7C7DB; font-weight:bold;', 'linked file:   ' + document.querySelectorAll('link')[i].getAttribute('href')); 
 }
