@@ -1,6 +1,5 @@
 // credentials to AtlasWiki
 // paste this in javascript console to use
-console.log()
 
 
 // adds in jquery library and loads it for 4 second before execution
